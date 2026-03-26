@@ -1,0 +1,16 @@
+name: Retail DWH Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Placeholder Step
+        run: echo "The CI/CD pipeline is active and ready for SQL tests!"
